@@ -13,4 +13,4 @@ class City(models.Model):
     country = models.ForeignKey(Country,on_delete=models.CASCADE)
 
     def __str__(self):
-        return "{}, {}".format(self.name, Country.name)
+        return "{}, {}".format(self.name, self.country.name)
