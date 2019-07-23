@@ -6,9 +6,9 @@ class Country(models.Model):
 
     def __str__(self):
         return "{}".format(self.name)
-
-class Meta:
-    verbose_name_plural = "Countries"
+    
+    class Meta:
+        verbose_name_plural = "Countries"
 
 
 class City(models.Model):
@@ -17,6 +17,6 @@ class City(models.Model):
 
     def __str__(self):
         return "{} city, {}".format(self.name, self.country.name)
-
-class Meta:
-    verbose_name_plural = 'Cities'
+    
+    class Meta:
+        verbose_name_plural = 'Cities'
