@@ -24,6 +24,6 @@ apipatterns = [
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include((apipatterns, 'api'), namespace='api'))
+    path('api/', include((apipatterns, 'api'), namespace='api')),
 ] 
 #+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
